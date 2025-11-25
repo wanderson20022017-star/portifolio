@@ -378,17 +378,16 @@ h2{
 .nav-links {
   gap: clamp(12px, 2.5vw, 30px);
   padding: 10px clamp(12px, 3vw, 30px);
-  flex-wrap: wrap; /* evita empurrar layout quando a largura é menor */
+  flex-wrap: wrap; 
 }
 
-/* Títulos e textos com escalas suaves */
+
 .Meu_nome { font-size: clamp(28px, 5vw, 40px); }
 .saudacao, .descricao { font-size: clamp(16px, 2.8vw, 20px); }
 .sobre_mim { font-size: clamp(20px, 2.4vw, 25px); }
 .sobre_mim_c { font-size: clamp(28px, 4vw, 45px); }
 .texto { font-size: clamp(18px, 2.2vw, 25px); }
 
-/* Cards de habilidades — mesma aparência, apenas evitando “estouro” lateral */
 .iii {
   max-width: min(450px, 94vw);
   
@@ -398,16 +397,16 @@ h2{
   height: clamp(110px, 18vw, 120px);
 }
 
-/* Tracinhos de seção mantendo visual */
+
 .tracinho_texto,
 .tracinho_projetos {
   height: 2.5px;
 
 }
 
-/* ====== Ajustes finos por breakpoint ====== */
+
 @media (max-width: 1100px) {
-  /* Evita overflow lateral dos blocos de texto */
+ 
   .sobre_mim,
   .sobre_mim_c,
   .texto {
@@ -416,17 +415,17 @@ h2{
 }
 
 @media (max-width: 800px) {
-  /* Mantém a seção hero proporcional */
+  
   .div_saudacao_meu_nome { padding: clamp(100px, 16vh, 180px); }
 
-  /* Ícones e tracinhos levemente mais próximos */
+  
   .icones { gap: clamp(14px, 4vw, 24px); }
 }
 
 @media (max-width: 520px) {
-  /* Nav links confortáveis em telas pequenas */
+  
   .nav-links a { font-size: 14px; }
-  .nav-links a:hover { font-size: 16px; } /* evita “pular” muito ao passar mouse */
+  .nav-links a:hover { font-size: 16px; } 
 }
 
 .div_pro{
@@ -466,4 +465,19 @@ h2{
   .nav-links a:hover {
     font-size: 15px;              
   }
+
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links a:focus {
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  
+  .icones .icone:hover,
+  .icones .icone:active,
+  .icones .icone:focus {
+    transform: none;
+  }
 }
+
