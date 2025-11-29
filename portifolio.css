@@ -7,7 +7,12 @@ section, div[id] {
 }
 
 html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;      /* não deixa rolar pro lado */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -97,22 +102,22 @@ body {
     
 
 .div1 {
-  width: 100vw; 
+  width: 100%; 
   max-width: 100%; 
-  background:linear-gradient(to right, rgb(2, 1, 12), rgba(3, 0, 19, 0.974), rgba(2, 0, 9, 0)) ;
+  background: linear-gradient(to right, rgb(2, 1, 12), rgba(3, 0, 19, 0.974), rgba(2, 0, 9, 0));
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
-  box-sizing: border-box; 
-  margin: 0; 
-  position: fixed;   /* 🔑 fixa no topo */
+  box-sizing: border-box;
+  margin: 0;
+  position: fixed;   
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  border-bottom : solid 1px rgba(255, 166, 0, 0.218);
+  border-bottom: solid 1px rgba(255, 166, 0, 0.218);
 }
 
 
@@ -457,7 +462,18 @@ h2{
 
 @media (max-width: 768px) {
 
+  body {
+    padding-top: 140px;   /* menu fica um pouco mais alto no mobile */
+  }
+
   .div1 {
+    width: 100%;
+    max-width: 100%;
+    position: fixed;      /* garante que continua fixo */
+    top: 0;
+    left: 0;
+    right: 0;
+
     flex-direction: column;       
     align-items: center;         
     justify-content: center;
@@ -478,28 +494,6 @@ h2{
     padding: 0;
     gap: 18px;
     flex-wrap: wrap;              
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-
-  .nav-links a:hover {
-    font-size: 15px;              
-  }
-
-  .nav-links a:hover,
-  .nav-links a:active,
-  .nav-links a:focus {
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  
-  .icones .icone:hover,
-  .icones .icone:active,
-  .icones .icone:focus {
-    transform: none;
   }
 }
 
