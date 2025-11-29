@@ -7,7 +7,7 @@ section, div[id] {
 }
 
 body{
-    background: url('imagem_portifolio.jpg') center/cover fixed no-repeat,
+    background: url('imagem_aportifolio.jpg') center/cover fixed no-repeat,
     linear-gradient(to right, rgb(6, 2, 32), rgb(3, 1, 17), rgb(2, 0, 9));
     color : white;
     font-family: 'Raleway', sans-serif;
