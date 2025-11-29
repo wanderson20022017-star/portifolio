@@ -5,11 +5,13 @@ html {
 section, div[id] {
     scroll-margin-top: 150px;
 }
-
 html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;  
 }
 
 body {
@@ -110,7 +112,7 @@ body {
   padding: 0 60px;
   box-sizing: border-box;
   margin: 0;
-  position: fixed;   
+  position: sticky;   /* <-- aqui é a troca */
   top: 0;
   left: 0;
   right: 0;
@@ -464,10 +466,10 @@ h2{
     padding-top: 140px;   /* menu fica um pouco mais alto no mobile */
   }
 
-  .div1 {
+ .div1 {
     width: 100%;
     max-width: 100%;
-    position: fixed;      /* garante que continua fixo */
+    position: sticky;   /* igual ao de cima */
     top: 0;
     left: 0;
     right: 0;
