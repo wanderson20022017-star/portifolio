@@ -293,15 +293,10 @@ h2{
 .card_habilidade:hover{
     transform : scale(1.05);
 }
-.projetos_txt p {
-    font-size :30px;
-    color : white;
-    margin-left: 5%;
-    top : 80px;
 
-}
 .projetos_txt{
-    margin-top : 10px;
+    margin-top : 30px;
+    font-size : 30px;
 
 }
 .tracinho_projetos{
