@@ -470,3 +470,20 @@ h2{
   }
 }
 
+#sobre {
+  max-width: 1300px;      /* largura máxima do conteúdo */
+  margin: 0 auto;         /* centraliza horizontalmente */
+  padding: 0 5%;          /* um respiro nas laterais */
+}
+
+/* Remove o empurrão pra esquerda desses elementos */
+#sobre .sobre_mim,
+#sobre .sobre_mim_c,
+#sobre .texto,
+#sobre .tracinho_texto,
+#sobre .tracinho_texto2,
+#sobre .tracinho_projetos {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
