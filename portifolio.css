@@ -11,12 +11,12 @@ body {
     padding: 0;
     position: relative;
     min-height: 100%;
-    padding-top: 100px; /* se você quiser esse espaço pro menu fixo, pode deixar */
+    padding-top: 100px; 
 
     font-family: 'Raleway', sans-serif;
     color: white;
 
-    /* AQUI é o fundo da página inteira */
+    
     background:
         linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url('imagem_portifolio.jpg') center/cover fixed no-repeat;
@@ -27,20 +27,20 @@ html, body {
     
 }
 
-/* ícones centralizados entre os dois tracinhos */
+
 .icones {
   display: flex;
-  justify-content: center;   /* ícones lado a lado no centro */
-  align-items: center;       /* alinhados na mesma linha */
-  gap: 35px;                 /* espaço entre os ícones */
+  justify-content: center;   
+  align-items: center;       
+  gap: 35px;                 
   position: absolute;
-  top: 540px;                /* mesmo nível dos tracinhos */
+  top: 540px;               
   left: 50%;
   transform: translateX(-50%);
-  margin-top : 55px; /* centraliza */
+  margin-top : 55px; 
 }
 
-/* estilo padronizado dos ícones */
+
 .icones .icone {
   width: 40px;
   height: 40px;
@@ -48,7 +48,7 @@ html, body {
   transition: transform 0.5s ease;
   cursor: pointer;
 }
-/* Empurra o início da seção "sobre" para fora da dobra */
+
 #sobre {
   margin-top: clamp(80px, 12vh, 180px);
 }
@@ -83,7 +83,7 @@ html, body {
   padding: 0 60px;
   box-sizing: border-box; 
   margin: 0; 
-  position: fixed;   /* 🔑 fixa no topo */
+  position: fixed;   
   top: 0;
   left: 0;
   right: 0;
@@ -162,7 +162,7 @@ h2{
     font-family: 'Open Sans', Arial, sans-serif;
 }
 #sobre {
-  margin-top: calc(30vh - 30px); /* 100px = altura do menu fixo */
+  margin-top: calc(30vh - 30px); 
 }
 .sobre_mim {
     
@@ -309,10 +309,10 @@ h2{
 }
 
 
-/* ====== Responsividade sem mudar o layout ====== */
+
 * { box-sizing: border-box; }
 
-/* Limita larguras fixas para caber em qualquer tela */
+
 .sobre_mim,
 .sobre_mim_c,
 .texto {
@@ -322,7 +322,7 @@ h2{
 
 .tracinho_texto2 {
   width: min(1300px, 90vw);
-  right: auto;               /* evita “estourar” em telas menores */
+  right: auto;              
   left: max(0vw, 0%);
 }
 
@@ -330,16 +330,16 @@ h2{
   width: min(1200px, 90vw);
 }
 
-/* Hero (saudação) com respiro proporcional à tela */
+
 .div_saudacao_meu_nome {
   padding: clamp(120px, 14vh, 220px);
 }
 
-/* Mantém os “tracinhos” alinhados e centralizados em várias resoluções */
+
 .tracinho,
 .tracinho_2 {
-  top: clamp(420px, 36vh, 560px);             /* altura adaptável */
-  width: clamp(180px, 22vw, 300px);           /* largura adaptável */
+  top: clamp(420px, 36vh, 560px);            
+  width: clamp(180px, 22vw, 300px);           
 }
 
 .tracinho { 
@@ -349,13 +349,13 @@ h2{
   right: clamp(24px, 18vw, 300px);
 }
 
-/* Ícones centralizados entre os tracinhos, com posição adaptável */
+
 .icones {
-  top: calc(clamp(420px, 36vh, 560px) - 20px); /* mantém no “meio” dos tracinhos */
+  top: calc(clamp(420px, 36vh, 560px) - 20px); 
   gap: clamp(18px, 3vw, 35px);
 }
 
-/* Navbar respira melhor e evita quebrar em telas menores */
+
 .div1 {
   padding: 0 clamp(16px, 4vw, 60px);
 }
@@ -466,12 +466,12 @@ h2{
 }
 
 #sobre {
-  max-width: 1300px;      /* largura máxima do conteúdo */
-  margin: 0 auto;         /* centraliza horizontalmente */
-  padding: 0 5%;          /* um respiro nas laterais */
+  max-width: 1300px;      
+  margin: 0 auto;         
+  padding: 0 5%;       
 }
 
-/* Remove o empurrão pra esquerda desses elementos */
+
 #sobre .sobre_mim,
 #sobre .sobre_mim_c,
 #sobre .texto,
