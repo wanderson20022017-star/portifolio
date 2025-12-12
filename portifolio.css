@@ -6,21 +6,7 @@ section, div[id] {
     scroll-margin-top: 150px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100%;
-    padding-top: 100px; 
 
-    font-family: 'Raleway', sans-serif;
-    color: white;
-
-    
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url('imagem_portifolio.jpg') center/cover fixed no-repeat;
-}
 html, body {
     height: auto;
     min-height: 100%;
@@ -30,14 +16,10 @@ html, body {
 
 .icones {
   display: flex;
-  justify-content: center;   
-  align-items: center;       
-  gap: 35px;                 
-  position: absolute;
-  top: 540px;               
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top : 55px; 
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: -60px; 
 }
 
 
@@ -124,10 +106,9 @@ h2{
     text-decoration: underline ;
     font-size : 20px;
 }
-.div_saudacao_meu_nome{
-    padding: 200px;
+.div_saudacao_meu_nome {
+  margin-top: 150px; 
 }
-
 .Meu_nome{
     text-align : center;  
     font-weight: 900;
@@ -147,7 +128,11 @@ h2{
     text-align : center;
     font-weight: 100;
     font-size: 20px;
+    margin-bottom : 0px;
 }
+
+
+
 
 
 .espaco{
@@ -589,4 +574,30 @@ h2{
     backdrop-filter: blur(4px);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
 
+    background-image:
+      linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('imagem_portifolio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('imagem_portifolio.jpg');
+    background-size: cover;
+    background-position: center;
+}
