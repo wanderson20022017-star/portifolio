@@ -601,3 +601,28 @@ body::before {
     background-size: cover;
     background-position: center;
 }
+.iii {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+@media (max-width: 900px) {
+  .iii {
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+  }
+}
+
+@media (max-width: 600px) {
+  .iii {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha */
+  }
+}
+
+@media (max-width: 400px) {
+  .iii {
+    grid-template-columns: 1fr; /* 1 por linha */
+  }
+}
